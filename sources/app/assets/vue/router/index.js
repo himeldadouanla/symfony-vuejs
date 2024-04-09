@@ -4,6 +4,7 @@ import store from "../store";
 import Home from "../views/Home";
 import Login from "../views/Login";
 import Posts from "../views/Posts";
+import Articles from "../views/Posts";
 
 Vue.use(VueRouter);
 
@@ -13,6 +14,7 @@ let router = new VueRouter({
     { path: "/home", component: Home },
     { path: "/login", component: Login },
     { path: "/posts", component: Posts, meta: { requiresAuth: true } },
+    { path: "/articles", component: Articles, meta: { requiresAuth: true } },
     { path: "*", redirect: "/home" }
   ],
 });

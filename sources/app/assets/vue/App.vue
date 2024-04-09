@@ -34,6 +34,14 @@
           <router-link
             class="nav-item"
             tag="li"
+            to="/articles"
+            active-class="active"
+          >
+            <a class="nav-link">Articles</a>
+          </router-link>
+          <router-link
+            class="nav-item"
+            tag="li"
             to="/posts"
             active-class="active"
           >
